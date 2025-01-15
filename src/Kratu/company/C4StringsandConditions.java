@@ -1,9 +1,7 @@
 package Kratu.company;
 
-import java.lang.classfile.instruction.SwitchCase;
-
-public class C4StringofKinds {
-    public static void stringmethods(){
+public class C4StringsandConditions {
+    public static void stringMethods(){
            String name = "Kratu";
            float age = 19.3333333333f;
            System.out.printf("Dear\t %s, H\"ow d\no you\' %10.3f?", name,age);
@@ -12,7 +10,7 @@ public class C4StringofKinds {
            System.out.println(Lowername);
            System.out.format("Dear Customer, Your Name is %s and Your Age is %1.3f, Formatted by method 2.\n",Lowername,age);
     }
-    public static void Divisibleby5(int... numbers) {
+    public static void divisibleBy5(int... numbers) {
         for (int number : numbers) {
             if (number%5 == 0){
                 System.out.println("Divisible by 5.");
@@ -22,13 +20,13 @@ public class C4StringofKinds {
             }
         }
     }
-    public static void spacecheck(String X){
+    public static void spaceCheck(String X){
         int spacecount = X.length();
         String Y = X.replaceAll(" ","");
         int newspacecount = Y.length();
         System.out.printf("Total Number of Spaces in Provided String is %d.\n",(spacecount-newspacecount));
     }
-    public static void websitetype(String X){
+    public static void websiteDomain(String X){
         /*
         switch(X){
             case "com":
@@ -55,10 +53,12 @@ public class C4StringofKinds {
         }
     }
     public static void main(String[] args){
-        stringmethods();
+        stringMethods();
         System.out.println("");
-        spacecheck("         SDE at Microsoft          ");
+        spaceCheck("         SDE at Microsoft          ");
         System.out.println("");
-        Divisibleby5(19,9,27,8,2005);
+        divisibleBy5(19,9,27,8,2005);
+        System.out.println("");
+        websiteDomain("com");
     }
 }

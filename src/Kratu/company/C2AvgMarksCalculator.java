@@ -1,4 +1,4 @@
-package com.company;
+package Kratu.company;
 import java.util.Scanner;
 public class C2AvgMarksCalculator {
     public static void main1() {

@@ -1,4 +1,4 @@
-package com.company;
+package Kratu.company;
 public class C1SumofDataTypes {
     public static void main(String[] args){
         byte bottle = 9;

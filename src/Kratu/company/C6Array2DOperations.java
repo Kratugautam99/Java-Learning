@@ -2,7 +2,7 @@ package Kratu.company;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Arrays;
-public class C6ArrayFunctionsandOperations{
+public class C6Array2DOperations{
     public static int[][] matrixBuilder(int rows,int columns){
         int[][] matrix = new int[rows][columns];
         Scanner sc = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class C6ArrayFunctionsandOperations{
             }
         }
         else {
-            System.out.print("Matrices should have equal dimensions. You will receive an empty 2D array with dimensions of the 1st matrix.");
+            System.out.println("Matrices should have equal dimensions. You will receive an empty 2D array with dimensions of the 1st matrix.\n");
         }
         return output;
     }
@@ -47,7 +47,7 @@ public class C6ArrayFunctionsandOperations{
             }
         }
         else{
-            System.out.print("Number of Columns in Matrix1 should be equal to Number of Rows in Matrix2. You will receive an empty 2D array with dimensions Matrix1 Number of Rows and Matrix2 Number of Columns.");
+            System.out.println("Number of Columns in Matrix1 should be equal to Number of Rows in Matrix2. You will receive an empty 2D array with dimensions Matrix1 Number of Rows and Matrix2 Number of Columns.\n");
         }
         return output;
     }
@@ -63,7 +63,7 @@ public class C6ArrayFunctionsandOperations{
         int[][] output = new int[matrix.length][matrix[0].length];
         for (int i = 0; i < matrix.length; i++){
             for (int j = 0; j < matrix.length; j++){
-                output[Math.abs(matrix.length-i)][Math.abs(matrix[0].length-j)] = matrix[i][j];
+                output[Math.abs(matrix.length-1-i)][Math.abs(matrix[0].length-1-j)] = matrix[i][j];
             }
         }
         return output;
@@ -93,7 +93,13 @@ public class C6ArrayFunctionsandOperations{
             }
         }
         Arrays.sort(steam);
-        
+        ind = 0;
+        for (int i = 0; i < matrix.length; i++){
+            for (int j = 0; j < matrix[0].length; j++){
+                matrix[i][j] = steam[ind++];
+            }
+        }
+        return matrix;
     }
     public static void main(String[] args){
         int[][] square1 = matrixBuilder(2,2);
@@ -101,11 +107,18 @@ public class C6ArrayFunctionsandOperations{
         int[][] Rsquare2 = matrixReverse(square2);
         int[][] result1 = matrixAdd(square1, Rsquare2);
         int[][] result2 = matrixMultiply(square1, Rsquare2);
-        System.out.print("\n\n");
+        System.out.println("");
+        matrixPrint(square2);
+        System.out.println("");
+        matrixPrint(Rsquare2);
+        System.out.println("");
         matrixPrint(result1);
-        System.out.print("\n");
+        System.out.println("");
         matrixPrint(result2);
-        System.out.print("\n");
-        matrixMinMax(result2);
+        System.out.println("");
+        int[] arr = matrixMinMax(result1);
+        System.out.println(Arrays.toString(arr));
+        System.out.println("");
+        matrixPrint(matrixSort(result2));
     }
 }

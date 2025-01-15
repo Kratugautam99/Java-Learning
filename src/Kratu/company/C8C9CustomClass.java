@@ -87,7 +87,7 @@ class Cone{
         return Volume;
     }
 }
-public class C8CustomClass {
+public class C8C9CustomClass {
     public static void main(String[] args) {
         Employee Naukar = new Employee();
         System.out.println("To unlock usage of methods, Press Enter.");
