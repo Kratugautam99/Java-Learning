@@ -121,5 +121,3 @@ Please follow our [Code of Conduct](https://opensource.org/code-of-conduct).
 Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ---
-
-**Topics**: `java dsa algorithms data-structures object-oriented-design app-development educational-resources`  
