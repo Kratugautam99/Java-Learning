@@ -1,6 +1,8 @@
 # ☕ Java-Learning
 
-> A hands-on journey through Java fundamentals, Data Structures & Algorithms, and real-world app development.
+> A hands-on journey through Java fundamentals, Data Structures & Algorithms, and Real-World App Development.
+
+![Java](https://github.com/Kratugautam99/Java-Learning/blob/master/CustomDocs/resource-files/Java.png)
 
 ---
 
