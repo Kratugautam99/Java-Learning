@@ -2,7 +2,7 @@ package Kratu.company;
 class German extends Exception{
     @Override
     public String getMessage(){
-        return "Hollo und Tschuss";
+        return "Hallo und Tschüss";
     }
     @Override
     public String toString(){
