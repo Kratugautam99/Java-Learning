@@ -10,7 +10,7 @@ import java.util.*;
  * This is the JavaFile for the demonstration of  Many ADVANCE JAVA concepts.
  * @use <p>Collections Methods (ArrayList) in AL, Date Class Methods as DT, Calendar Class Methods as CAL, LocalDateTime and DateTimeFormatter Methods as MDT, File and FileWriter Methods as FILE.</p>
  * <i>There are Demonstrations of Anonymous Class and Lambda Methods as well.</i>
- *@Author: Kratu Gautam
+ * @Author: Kratu Gautam
  * @Version: 1
  * @Since: 2025
  * @See: <a href="https://docs.oracle.com/en/java/">More Java Documentation!</a>
@@ -101,10 +101,10 @@ public class C15ADVJava {
             e.printStackTrace();
         }
         try{
-        Scanner sc = new Scanner(new File("xy.text"));
-        while(sc.hasNextLine()){
-            String line = sc.nextLine();
-            System.out.println(line);
+            Scanner sc = new Scanner(new File("xy.text"));
+            while(sc.hasNextLine()){
+                String line = sc.nextLine();
+                System.out.println(line);
         }
         sc.close();}
         catch(FileNotFoundException e){
