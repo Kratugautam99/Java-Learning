@@ -63,6 +63,6 @@ public class C12C13PackagesandThreading {
         c2.start();
         c3.start();
         c4.start();
-        System.out.println("c4 Priority: "+c4.getPriority()+" c2 Name: "+c2.getName());
+        System.out.println("c4 Priority: "+c4.getPriority()+", c2 Name: "+c2.getName());
     }
 }
