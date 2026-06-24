@@ -40,13 +40,20 @@ Java-Learning is my personal codebase for mastering core Java concepts—from ob
 
 ```text
 Java-Learning/
+|
 ├── .idea/                            # IntelliJ project configs
+|
 ├── CustomDocs/                       # Design docs, diagrams & study guides
+|
 ├── src/
 │   └── Kratu/company/                # Core Java packages & classes
+|
 ├── JavaLearning.iml                  # IDE module file
+|
 ├── Java_Complete_Notes.7z            # Comprehensive offline notes archive
+|
 ├── .gitignore                        # Files & folders to exclude from Git
+|
 └── README.md                         # This overview
 ```
 
