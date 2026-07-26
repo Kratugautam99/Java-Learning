@@ -1,0 +1,42 @@
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          twitter:
+            authorization-uri: https://twitter.com/i/oauth2/authorize
+            token-uri: https://api.twitter.com/2/oauth2/token
+            user-info-uri: https://api.twitter.com/2/users/me
+            user-name-attribute: data.id
+        registration:
+          google:
+            client-id: cvosjkaflm
+            client-secret: hfoewufbvix
+          github:
+            client-id: ajsfklasajfkaf
+            client-secret: ajaslkfjadasfja
+          twitter:
+            client-id: sadgfahskdgfhadf
+            client-secret: dsflsdfkasjdfa
+            authorization-grant-type: authorization_code
+            scope:
+              - tweet.read
+              - users.read
+            client-name: Twitter
+            client-authentication-method: client_secret_basic
+            provider: twitter
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+
+server:
+  forward-headers-strategy: framework
+
+server.servlet.session.cookie:
+  secure: true
+  http-only: true
+  same-site: None
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.security.oauth2: DEBUG
