@@ -21,7 +21,7 @@
 
 ## ✨ What’s Inside
 
-Java-Learning is my personal codebase for mastering core Java concepts—from object-oriented principles to algorithmic problem solving and app scaffolding. Each module lives alongside samples and exercises so you can follow the same learning path, experiment with code, and build confidence.
+Java-Learning is my personal codebase for mastering core Java concepts—from object-oriented principles to algorithmic problem solving and app scaffolding. Each module lives alongside samples and exercises so you can follow the same learning path, experiment with code, and build confidence. SpringBoot Backend Files are also Added.
 
 ---
 
@@ -47,6 +47,8 @@ Java-Learning/
 |
 ├── src/
 │   └── Kratu/company/                # Core Java packages & classes
+|
+├── Spring_Boot_Tutorials             # Spring-Boot files
 |
 ├── JavaLearning.iml                  # IDE module file
 |
@@ -76,6 +78,7 @@ cd Java-Learning
 
 - **IntelliJ/Eclipse**: Import the project as a Maven/Gradle module or open the existing `.iml`.  
 - **Command Line**: Compile and run via `javac`/`java` (see below).
+- **Spring Boot**: The Backend Spring Boot Folders have their own `README.md` refer it.
 
 ---
 
